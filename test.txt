@@ -1,0 +1,41 @@
+TEST 1:given input examples
+((ab)(cd))
+(abc)
+((abc))
+(abc
+()
+(ab)(cd)
+ab(cd)
+
+TEST 2: line buffer overflow behavior
+(((((((((((((((((((((((((((((abcdefg))))))))))
+
+TEST 3: pathological input behavior
+((abc)
+(((ab)ab
+(abc
+((abc )
+ab)
+((((((((((
+
+TEST 4: spaces management
+((((    ))))
+   12(h)
+  (a)
+()   
+   () 
+  ( a )
+( ( a ) )
+ (j) (k
+
+TEST 5: other input cases
+((ab))c)
+(((ab))(cd))
+((ab))c)d))
+(j(a))
+(j(j)m)
+ ( j ())
+
+
+ 
+
